@@ -77,20 +77,21 @@
 .index .restaurants .card {
   height: 251px;
 }
-.index .restaurants .card img {
+.index .restaurants .card_img {
   height: 70%;
   border-radius: 15px 15px 0 0;
 }
 .index .restaurants .card_new {
   position: relative;
   z-index: 2;
-  top: 20px;
-  right: 20px;
+  bottom: 145px;
+  left: 275px;
   padding: 7px 10px;
+  margin: -42px;
   background-color: #99E2D0;
   color: #008166;
-  width: 80px;
-  height: 29px;
+  /*width: 80px;
+  height: 29px;*/
   border-radius: 2px;
   line-height: 2;
   text-align: center;

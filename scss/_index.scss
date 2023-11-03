@@ -84,20 +84,23 @@
 
         .card {
             height: 251px;
-            img {
+            &_img {
                 height: 70%;
                 border-radius: 15px 15px 0 0;                
             }
             &_new {
                 position: relative;
                 z-index: 2;
-                top: 20px;
-                right: 20px;
+                bottom: 145px;
+                left: 275px;
                 padding: 7px 10px;
+                //Pour que les autres élèments ignore le bloc "nouveau" (pourquoi -42px ?)
+                margin: -42px;
                 background-color: variables.$green;
                 color: variables.$green-font;
-                width: 80px;
-                height: 29px;
+                //Taille pas nécessaire, car card_new est un span
+                /*width: 80px;
+                height: 29px;*/
                 border-radius: 2px;
                 line-height: 2;
                 text-align: center;
