@@ -8,12 +8,22 @@
         background-size: cover;
     }
     .menu-container {
-        //Ne pas oublier, border-radius et pos relative
         border-radius: 36px 36px 0 0;
         position: relative;
         bottom: 36px;
-        z-index: 2;
         background-color: variables.$bgcolor;
+        display:flex;
+        flex-direction: column;
+        gap: 40px;
+        h2::after{
+            content:"";
+            display: block;
+            background-color: variables.$green;
+            width: 40px;
+            height: 3px;
+            position: relative;
+            top: 8px;
+        }
         &_titre {
             display: flex;
             flex-direction: row;
@@ -33,7 +43,9 @@
         }
         section {
             margin: 0 17px;
-            
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
             h2{
                 font-family: 'Roboto';
                 font-weight: 300;
@@ -44,6 +56,30 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                width: 349px;
+                height: 69px;
+                &_content{
+                    align-self: center;
+                    h3, p{
+                        font-family: 'Roboto';
+                        margin:0 16px;
+                    }
+                    h3{                        
+                        font-weight: 500;
+                        font-size:18px;
+                        line-height: 21.09px;
+                    }
+                    p{                        
+                        font-weight: 300;
+                        font-size:15.04px;
+                        line-height: 17.63px;
+                    }
+                }
+                &_price{
+                    align-self: end;
+                    margin-bottom: 12px;
+                    margin-right: 16px;
+                }
             }
         }
     }
