@@ -131,6 +131,44 @@
   height: 275px;
   background-size: cover;
 }
+.menus .menu-container {
+  border-radius: 36px 36px 0 0;
+  position: relative;
+  bottom: 36px;
+  z-index: 2;
+  background-color: #F6F6F6;
+}
+.menus .menu-container_titre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 17px;
+}
+.menus .menu-container_titre h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 40.82px;
+}
+.menus .menu-container_titre i {
+  align-self: center;
+}
+.menus .menu-container section {
+  margin: 0 17px;
+}
+.menus .menu-container section h2 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.menus .menu-container section .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 body {
   font-family: "Roboto";
