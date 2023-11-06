@@ -207,6 +207,10 @@
   margin-bottom: 12px;
   margin-right: 16px;
 }
+.menus .menu-container button {
+  width: 186px;
+  margin: auto;
+}
 
 body {
   font-family: "Roboto";
