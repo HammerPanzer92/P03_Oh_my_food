@@ -1,3 +1,27 @@
+@media screen and (min-width: 1440px) {
+  .index ol {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .index ol li {
+    width: 322px;
+    height: 72px;
+    line-height: 4.5;
+  }
+  .index ol li i {
+    margin: 0 15px;
+  }
+  .index ol li::before {
+    top: 25px;
+  }
+  .index .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+}
 .index main {
   padding: 0;
 }
@@ -18,9 +42,14 @@
   align-self: center;
 }
 .index .hero {
+  background-color: #F6F6F6;
+  margin: 0px 0px 50px 0px;
+  padding-bottom: 50px;
+}
+.index .hero div {
   display: flex;
   flex-direction: column;
-  margin: 50px 0px;
+  justify-content: center;
 }
 .index .hero h1,
 .index .hero p {
@@ -238,6 +267,7 @@ button {
   line-height: 18.75px;
   border-width: 0px;
   border-radius: 25px;
+  margin: auto;
 }
 
 img {

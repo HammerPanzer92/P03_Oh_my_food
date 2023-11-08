@@ -1,6 +1,30 @@
 @use "variables";
 
 .index {
+    @media screen and (min-width: 1440px) {
+        ol {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            li{
+                width: 322px;
+                height: 72px;
+                line-height: 4.5;
+                i{
+                    margin: 0 15px;
+                }
+                &::before{
+                    top: 25px;
+                }
+            }
+        }
+        .fonctionnement {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+        }
+    }
     main {
         padding: 0;
         section {
@@ -22,9 +46,15 @@
     }
 
     .hero {
-        display: flex;
-        flex-direction: column;
-        margin: 50px 0px;
+        background-color: variables.$bgcolor;
+        margin: 0px 0px 50px 0px;
+        padding-bottom: 50px;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         h1,
         p {
             text-align: center;
@@ -86,7 +116,7 @@
             height: 251px;
             &_img {
                 height: 70%;
-                border-radius: 15px 15px 0 0;                
+                border-radius: 15px 15px 0 0;
             }
             &_new {
                 position: relative;
