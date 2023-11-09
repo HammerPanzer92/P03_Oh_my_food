@@ -80,6 +80,8 @@ footer {
     gap: 16px;
     padding: 22px 25px;
     margin-top: 50px;
+    position: relative;
+    z-index: 10;
     h1 {
         font-family: "Shrikhand";
         font-weight: 400;
