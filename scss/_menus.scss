@@ -2,23 +2,28 @@
 
 .menus {
     background-color: variables.$bgcolor;
+    main {
+        position: relative;
+    }
     .menus-background {
         background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        background-size: cover;
         width: 100%;
         height: 275px;
-        background-size: cover;
+        position: absolute;
     }
     .menu-container {
         border-radius: 36px 36px 0 0;
         position: relative;
+        z-index: 2;
         bottom: 36px;
         background-color: variables.$bgcolor;
-        display:flex;
+        display: flex;
         flex-direction: column;
         gap: 40px;
-        margin-bottom: -36px;
-        h2::after{
-            content:"";
+        margin-top: 239px;
+        h2::after {
+            content: "";
             display: block;
             background-color: variables.$green;
             width: 40px;
@@ -31,13 +36,14 @@
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-between;
-            margin: 0 17px;
+            margin: auto;
             h1 {
                 font-family: "Shrikhand";
                 font-weight: 400;
                 font-style: italic;
                 font-size: 28px;
                 line-height: 40.82px;
+                margin-right: 20px;
             }
             i {
                 align-self: center;
@@ -48,8 +54,8 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            h2{
-                font-family: 'Roboto';
+            h2 {
+                font-family: "Roboto";
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 18.75px;
@@ -60,24 +66,26 @@
                 justify-content: space-between;
                 width: 349px;
                 height: 69px;
-                &_content{
+                margin:auto;
+                &_content {
                     align-self: center;
-                    h3, p{
-                        font-family: 'Roboto';
-                        margin:0 16px;
+                    h3,
+                    p {
+                        font-family: "Roboto";
+                        margin: 0 16px;
                     }
-                    h3{                        
+                    h3 {
                         font-weight: 500;
-                        font-size:18px;
+                        font-size: 18px;
                         line-height: 21.09px;
                     }
-                    p{                        
+                    p {
                         font-weight: 300;
-                        font-size:15.04px;
+                        font-size: 15.04px;
                         line-height: 17.63px;
                     }
                 }
-                &_price{
+                &_price {
                     align-self: end;
                     margin-bottom: 12px;
                     margin-right: 16px;
@@ -88,7 +96,7 @@
                 }
             }
         }
-        button{
+        button {
             width: 186px;
             margin: auto;
         }
