@@ -151,7 +151,8 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin: auto;
+            padding: 50px 180px;
+            gap: 25px;
             ol {
                 display: flex;
                 flex-direction: row;
@@ -181,28 +182,29 @@
                 }
             }
         }
-        footer{
+        footer {
             flex-direction: row-reverse;
             gap: 64px;
             align-items: end;
             height: 114px;
-            h1{
+            h1 {
                 margin: 0;
             }
-            h1, .footer-container{
+            h1,
+            .footer-container {
                 margin-bottom: 16px;
             }
-            .footer-container{
+            .footer-container {
                 display: flex;
                 flex-direction: row;
                 align-items: end;
                 gap: 32px;
-                div{
+                div {
                     display: flex;
                     flex-direction: row;
                     gap: 16px;
-                }                
-                p{
+                }
+                p {
                     margin: 0 auto;
                 }
             }
