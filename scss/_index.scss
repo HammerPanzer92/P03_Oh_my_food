@@ -178,6 +178,9 @@
                 gap: 28px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                :nth-child(even){
+                    justify-self: end;
+                }
                 .card {
                     width: 490px;
                 }

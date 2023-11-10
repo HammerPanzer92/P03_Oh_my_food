@@ -170,6 +170,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .index .restaurants .card-container :nth-child(even) {
+    justify-self: end;
+  }
   .index .restaurants .card-container .card {
     width: 490px;
   }
