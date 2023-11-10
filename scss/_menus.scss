@@ -10,7 +10,6 @@
         background-size: cover;
         width: 100%;
         height: 275px;
-        position: absolute;
     }
     .menu-container {
         border-radius: 36px 36px 0 0;
@@ -21,7 +20,6 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        margin-top: 239px;
         h2::after {
             content: "";
             display: block;
@@ -108,7 +106,6 @@
             .menu-container {
                 width: 1055px;
                 margin: auto;
-                margin-top: 284px;
                 section {
                     h2 {
                         margin: 12px 19%;

@@ -163,6 +163,7 @@
   .index .restaurants {
     gap: 28px;
     padding: 0 180px;
+    background-color: #F6F6F6;
   }
   .index .restaurants .card-container {
     gap: 28px;
@@ -212,7 +213,6 @@
   background-size: cover;
   width: 100%;
   height: 275px;
-  position: absolute;
 }
 .menus .menu-container {
   border-radius: 36px 36px 0 0;
@@ -223,7 +223,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 239px;
 }
 .menus .menu-container h2::after {
   content: "";
@@ -313,7 +312,6 @@
   .menus main .menu-container {
     width: 1055px;
     margin: auto;
-    margin-top: 284px;
   }
   .menus main .menu-container section h2 {
     margin: 12px 19%;

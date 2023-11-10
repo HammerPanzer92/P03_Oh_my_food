@@ -173,6 +173,7 @@
         .restaurants {
             gap: 28px;
             padding: 0 180px;
+            background-color: variables.$bgcolor;
             .card-container {
                 gap: 28px;
                 display: grid;
