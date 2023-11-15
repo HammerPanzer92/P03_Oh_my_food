@@ -173,34 +173,6 @@
   .index .restaurants .card-container .card {
     width: 100%;
   }
-  .index footer {
-    flex-direction: row-reverse;
-    gap: 64px;
-    align-items: end;
-    height: 114px;
-    margin-top: 0;
-  }
-  .index footer h1 {
-    margin: 0;
-  }
-  .index footer h1,
-  .index footer .footer-container {
-    margin-bottom: 16px;
-  }
-  .index footer .footer-container {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    gap: 32px;
-  }
-  .index footer .footer-container div {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-  }
-  .index footer .footer-container p {
-    margin: 0 auto;
-  }
 }
 
 .menus {
@@ -430,6 +402,37 @@ footer h1 {
 }
 footer a {
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 64px;
+    align-items: end;
+    height: 114px;
+    margin-top: 0;
+  }
+  footer h1 {
+    margin: 0;
+  }
+  footer h1,
+  footer .footer-container {
+    margin-bottom: 16px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 32px;
+  }
+  footer .footer-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  footer .footer-container p {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -183,33 +183,5 @@
                 }
             }
         }
-        footer {
-            flex-direction: row-reverse;
-            gap: 64px;
-            align-items: end;
-            height: 114px;
-            margin-top: 0;
-            h1 {
-                margin: 0;
-            }
-            h1,
-            .footer-container {
-                margin-bottom: 16px;
-            }
-            .footer-container {
-                display: flex;
-                flex-direction: row;
-                align-items: end;
-                gap: 32px;
-                div {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 16px;
-                }
-                p {
-                    margin: 0 auto;
-                }
-            }
-        }
     }
 }
