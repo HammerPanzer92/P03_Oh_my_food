@@ -159,13 +159,13 @@
                 gap: 25px;
                 li {
                     width: 322px;
-                    height: 72px;
-                    line-height: 4.5;
+                    padding: 26px 0;
+                    text-align: center;
                     i {
-                        margin: 0 15px;
+                        margin: 0 8px 0 0;
                     }
                     &::before {
-                        top: 36px;
+                        top: 26px;
                     }
                 }
             }
@@ -175,14 +175,11 @@
             padding: 0 180px 50px 180px;
             background-color: variables.$bgcolor;
             .card-container {
-                gap: 28px;
+                gap: 50px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                :nth-child(even){
-                    justify-self: end;
-                }
                 .card {
-                    width: 490px;
+                    width: 100%;
                 }
             }
         }

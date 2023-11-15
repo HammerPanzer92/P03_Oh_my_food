@@ -102,20 +102,27 @@
     @media screen and (min-width: 768px) {
         background-color: white;
         main {
-            background-color: white;
             .menu-container {
-                width: 1055px;
+                max-width: 1055px;
+                width: 100%;
                 margin: auto;
-                section {
+                align-items: center;        
+                section {                    
+                    //Section Responsive avec max-width
+                    /*
+                    max-width: 634px;
+                    width: 100%;
+                    */
                     h2 {
-                        margin: 12px 19%;
+                        margin: 12px 5px;
                     }
                     .card {
-                        width: 634px;
                         height: 69px;
+                        //Remplacer le width de 634px par 100% si Section Responsive
+                        width: 634px;
                     }
                 }
-                button{
+                button {
                     position: relative;
                     z-index: 2;
                 }
