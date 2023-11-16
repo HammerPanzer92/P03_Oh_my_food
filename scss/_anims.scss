@@ -22,3 +22,29 @@ button:hover{
     }
   } 
 }
+
+@keyframes loading {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+header::before{
+    display: block;
+    position: sticky;
+    z-index: 11;
+    background-image: variables.$gradient;
+    height: 100vh;
+    width: 100vw;
+    animation-name: loading;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
