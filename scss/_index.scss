@@ -135,11 +135,12 @@
                     align-self: center;
                     margin-right: 10px;
                     font-size: 21px;
-                    .fa-solid {
+                    .fa-regular {
                         background-image: variables.$gradient;
                         background-clip: text;
                         -webkit-background-clip: text;
-                        color: transparent;
+                        background-repeat: no-repeat;
+                        background-position-y: top 19px;
                     }
                 }
             }
