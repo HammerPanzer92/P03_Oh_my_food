@@ -65,8 +65,14 @@
                 width: 349px;
                 height: 69px;
                 margin: auto;
+                &_div{
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                }
                 &_content {
                     align-self: center;
+                    width: 100%;
                     h3,
                     p {
                         font-family: "Roboto";
@@ -91,6 +97,15 @@
                     font-size: 15px;
                     line-height: 18px;
                     text-align: center;
+                }
+                &_check{
+                    background-color: variables.$green;
+                    color: variables.$white;
+                    //Coupe le border radius
+                    border-radius: 0 15px 15px 0;
+                    display: flex;
+                    align-items: center;
+                    max-width: 59px;
                 }
             }
         }

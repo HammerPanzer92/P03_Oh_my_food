@@ -245,8 +245,14 @@
   height: 69px;
   margin: auto;
 }
+.menus .menu-container section .card_div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .menus .menu-container section .card_content {
   align-self: center;
+  width: 100%;
 }
 .menus .menu-container section .card_content h3,
 .menus .menu-container section .card_content p {
@@ -271,6 +277,14 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
+}
+.menus .menu-container section .card_check {
+  background-color: #99E2D0;
+  color: #FFFFFF;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  max-width: 59px;
 }
 .menus .menu-container button {
   width: 186px;
@@ -314,16 +328,56 @@
   }
 }
 
+/*
+----Animation de chargement de page
+*/
+@keyframes loading {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  50% {
+    opacity: 0.5;
+    height: 100%;
+  }
+  99% {
+    opacity: 0.01;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+  }
+}
+#loader {
+  content: "";
+  position: fixed;
+  z-index: 11;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  height: 100%;
+  width: 100%;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+/*
+Animation des boutons
+*/
 button {
   transition: all 0.3s;
   filter: brightness(1);
 }
-
 button:hover {
   filter: brightness(1.5);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
+/*
+Animation des favoris
+*/
 .index .card_favorite .fa-regular {
   transition: all 0s, background-position-y 0.3s;
 }
@@ -333,29 +387,12 @@ button:hover {
   background-position-y: top 0px !important;
 }
 
-@keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-header::before {
-  display: block;
-  position: sticky;
-  z-index: 11;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  height: 100vh;
-  width: 100vw;
-  animation-name: loading;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+/*
+Animation pour card_check
+*/
+.menus .menu-container .card_content:hover {
+  width: calc(100% - 59px);
+  background-color: rebeccapurple;
 }
 
 body {
