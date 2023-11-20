@@ -245,11 +245,6 @@
   height: 69px;
   margin: auto;
 }
-.menus .menu-container section .card_div {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
 .menus .menu-container section .card_content {
   align-self: center;
   width: 100%;
@@ -283,13 +278,11 @@
   color: #FFFFFF;
   border-radius: 0 15px 15px 0;
   display: none;
-  align-items: center;
   width: 0px;
-  text-align: center;
-  transition: width 1s;
 }
-.menus .menu-container section .card_check .fa-regular {
+.menus .menu-container section .card_check .fa-circle-check {
   margin: auto;
+  font-size: 20px;
 }
 .menus .menu-container button {
   width: 186px;
@@ -395,20 +388,20 @@ Animation des favoris
 /*
 Animation pour card_check
 */
-@keyframes checkAnimMenu {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 59px;
-  }
-}
+/* @keyframes checkAnimMenu {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 59px;
+    }    
+} */
 .menus .menu-container .card:hover .card_check {
   width: 59px;
-  display: flex;
-  animation-name: checkAnimMenu;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  display: flex; /* 
+animation-name: checkAnimMenu;
+animation-duration: 0.5s;
+animation-fill-mode: forwards; */
 }
 
 body {
