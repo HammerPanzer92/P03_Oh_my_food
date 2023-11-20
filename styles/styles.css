@@ -282,9 +282,14 @@
   background-color: #99E2D0;
   color: #FFFFFF;
   border-radius: 0 15px 15px 0;
-  display: flex;
+  display: none;
   align-items: center;
-  max-width: 59px;
+  width: 0px;
+  text-align: center;
+  transition: width 1s;
+}
+.menus .menu-container section .card_check .fa-regular {
+  margin: auto;
 }
 .menus .menu-container button {
   width: 186px;
@@ -390,9 +395,20 @@ Animation des favoris
 /*
 Animation pour card_check
 */
-.menus .menu-container .card_content:hover {
-  width: calc(100% - 59px);
-  background-color: rebeccapurple;
+@keyframes checkAnimMenu {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 59px;
+  }
+}
+.menus .menu-container .card:hover .card_check {
+  width: 59px;
+  display: flex;
+  animation-name: checkAnimMenu;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 body {
