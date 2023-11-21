@@ -33,6 +33,35 @@ img {
     object-fit: cover;
     width: 100%;
 }
+#loader {
+    display: flex;
+    position: fixed;
+    z-index: 11;
+    background-color: variables.$white;
+    height: 100%;
+    width: 100%;
+
+    .loader_container {
+        margin: auto;
+        h1 {
+            font-family: "Shrikhand";
+            font-weight: 400;
+            font-style: italic;
+            font-size: 30px;
+            line-height: 43.74px;
+        }
+        .loader_circle{
+            margin: auto;
+            border-radius: 100%;
+            width: variables.$loader-circle-size;
+            height: variables.$loader-circle-size;
+            border-color: variables.$button-secondary;
+            border-top-color: variables.$button-primary;
+            border-style: solid;
+            border-width: 5px;
+        }
+    }
+}
 
 header {
     display: flex;

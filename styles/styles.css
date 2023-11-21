@@ -348,17 +348,26 @@
   }
 }
 #loader {
-  content: "";
-  position: fixed;
-  z-index: 11;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  height: 100%;
-  width: 100%;
   animation-name: loading;
+  animation-delay: 2s;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-direction: normal;
   animation-fill-mode: forwards;
+}
+
+@keyframes loaderCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader_circle {
+  animation-name: loaderCircle;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
 }
 
 /*
@@ -432,6 +441,35 @@ button {
 img {
   object-fit: cover;
   width: 100%;
+}
+
+#loader {
+  display: flex;
+  position: fixed;
+  z-index: 11;
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+}
+#loader .loader_container {
+  margin: auto;
+}
+#loader .loader_container h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 43.74px;
+}
+#loader .loader_container .loader_circle {
+  margin: auto;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  border-color: #FF79DA;
+  border-top-color: #9356DC;
+  border-style: solid;
+  border-width: 5px;
 }
 
 header {
