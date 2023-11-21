@@ -32,16 +32,16 @@
     animation-fill-mode: forwards;
 }
 
-@keyframes loaderCircle{
-    0%{
+@keyframes loaderCircle {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.loader_circle{
+.loader_circle {
     animation-name: loaderCircle;
     animation-iteration-count: infinite;
     animation-duration: 0.5s;
@@ -94,11 +94,33 @@ Animation pour card_check
         .card:hover {
             .card_check {
                 width: 59px;
-                display: flex;/* 
+                display: flex; /* 
                 animation-name: checkAnimMenu;
                 animation-duration: 0.5s;
                 animation-fill-mode: forwards; */
             }
+        }
+    }
+}
+
+@keyframes appearAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.menus {
+    section {
+        animation-name: appearAnim;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @for $i from 2 to 5{
+        .menu-container:nth-child(#{$i}) {
+            animation-delay: calc(($i * 250ms) - 250ms);
         }
     }
 }
