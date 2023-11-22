@@ -81,20 +81,24 @@ Animation des favoris
 Animation pour card_check
 */
 @keyframes checkAnimMenu {
-    from{
+    from {
         width: 0px;
     }
-    to{
+    to {
         width: 59px;
-    }    
+    }
 }
 
 .menus {
     .menu-container {
         .card:hover {
+            .card_content {
+                width: calc(100% - 102px);
+            }
+
             .card_check {
                 width: 59px;
-                display: flex; 
+                display: flex;
                 animation-name: checkAnimMenu;
                 animation-duration: 0.5s;
                 animation-fill-mode: forwards;
@@ -118,7 +122,7 @@ Animation pour card_check
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-    @for $i from 2 to 5{
+    @for $i from 2 to 5 {
         .menu-container:nth-child(#{$i}) {
             animation-delay: calc(($i * 250ms) - 250ms);
         }

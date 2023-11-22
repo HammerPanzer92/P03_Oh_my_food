@@ -67,11 +67,14 @@
                 margin: auto;
                 &_content {
                     align-self: center;
-                    width: 100%;
+                    width: 307px;
                     h3,
                     p {
                         font-family: "Roboto";
                         margin: 0 16px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                     h3 {
                         font-weight: 500;
@@ -92,6 +95,7 @@
                     font-size: 15px;
                     line-height: 18px;
                     text-align: center;
+                    width: 27px;
                 }
                 &_check {
                     background-color: variables.$green;
@@ -133,6 +137,9 @@
                         height: 69px;
                         //Remplacer le width de 634px par 100% si Section Responsive
                         width: 634px;
+                        &_content{
+                            width: 591px;
+                        }
                     }
                 }
                 button {

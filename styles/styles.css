@@ -247,12 +247,15 @@
 }
 .menus .menu-container section .card_content {
   align-self: center;
-  width: 100%;
+  width: 307px;
 }
 .menus .menu-container section .card_content h3,
 .menus .menu-container section .card_content p {
   font-family: "Roboto";
   margin: 0 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menus .menu-container section .card_content h3 {
   font-weight: 500;
@@ -272,6 +275,7 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
+  width: 27px;
 }
 .menus .menu-container section .card_check {
   background-color: #99E2D0;
@@ -310,6 +314,9 @@
   .menus main .menu-container section .card {
     height: 69px;
     width: 634px;
+  }
+  .menus main .menu-container section .card_content {
+    width: 591px;
   }
   .menus main .menu-container button {
     position: relative;
@@ -404,6 +411,9 @@ Animation pour card_check
   to {
     width: 59px;
   }
+}
+.menus .menu-container .card:hover .card_content {
+  width: calc(100% - 102px);
 }
 .menus .menu-container .card:hover .card_check {
   width: 59px;
