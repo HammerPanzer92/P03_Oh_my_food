@@ -397,20 +397,20 @@ Animation des favoris
 /*
 Animation pour card_check
 */
-/* @keyframes checkAnimMenu {
-    from{
-        width: 0px;
-    }
-    to{
-        width: 59px;
-    }    
-} */
+@keyframes checkAnimMenu {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 59px;
+  }
+}
 .menus .menu-container .card:hover .card_check {
   width: 59px;
-  display: flex; /* 
-animation-name: checkAnimMenu;
-animation-duration: 0.5s;
-animation-fill-mode: forwards; */
+  display: flex;
+  animation-name: checkAnimMenu;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes appearAnim {
