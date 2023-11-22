@@ -126,9 +126,13 @@
                     flex-direction: column;
                     justify-content: center;
                     padding-left: 5px;
+                    width: 79%;
                     h2,
                     p {
                         margin: 5px 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                 }
                 .card_favorite {
@@ -160,13 +164,10 @@
                 gap: 25px;
                 li {
                     width: 322px;
-                    padding: 26px 0;
+                    padding: 26px 0 26px 9px;
                     text-align: center;
-                    i {
-                        margin: 0 8px 0 0;
-                    }
                     &::before {
-                        top: 26px;
+                        top: 34%;
                     }
                 }
             }

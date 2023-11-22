@@ -121,9 +121,10 @@ Animation pour card_check
         animation-name: appearAnim;
         animation-duration: 1s;
         animation-fill-mode: forwards;
+        opacity: 0;
     }
     @for $i from 2 to 5 {
-        .menu-container:nth-child(#{$i}) {
+        section:nth-child(#{$i}) {
             animation-delay: calc(($i * 250ms) - 250ms);
         }
     }
