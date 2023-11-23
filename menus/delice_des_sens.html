@@ -13,115 +13,187 @@
   <title>Oh my food - Le délice des sens</title>
 </head>
 
-<body>
+<body class="menus">
+  <div id="loader">
+    <div class="loader_container">
+      <h1>Oh my food</h1>
+      <div class="loader_circle"></div>
+    </div>
+  </div>
   <header>
     <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-    <img src="../images/logo/ohmyfood@2x.svg" alt="Oh my food">
+    <h1>ohmyfood</h1>
   </header>
-  <main class="menus">
-    <!--<img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">-->
-    <div class="menus-background"></div>
+  <main>
+    <div class="menus-background bg-delice"></div>
     <div class="menu-container">
-      <h1>Le délice des sens</h1><i class="fa-regular fa-heart"></i>
-      <section>
-        <h2>Entrées</h2>
-        <article class="card">
-          <div class="card_content">
-            <h3>Tartare de thon</h3>
-            <p>Assaisonné au yuzu</p>
-          </div>
-          <div class="card_price">
-            25€
-          </div>
-        </article>
-        <article class="card">
-          <div class="card_content">
-            <h3>Bouchée de homard croustillant</h3>
-            <p>Et sa farandole de petits légumes</p>
-          </div>
-          <div class="card_price">
-            35€
-          </div>
-        </article>
-        <article class="card">
-          <div class="card_content">
-            <h3>Velouté de cèpes</h3>
-            <p>Aux truffes</p>
-          </div>
-          <div class="card_price">
-            20€
-          </div>
-        </article>
-      </section>
-      <section>
-        <h2>Plats</h2>
-        <article class="card">
-          <div class="card_content">
-            <h3>Poulet rôti aux herbes de Provence</h3>
-            <p>Et sa crème de truffe</p>
-          </div>
-          <div class="card_price">
-            40€
-          </div>
-        </article>
-        <article class="card">
-          <div class="card_content">
-            <h3>Langouste rôtie</h3>
-            <p>Et ses légumes de saison</p>
-          </div>
-          <div class="card_price">
-            35€
-          </div>
-        </article>
-        <article class="card">
-          <div class="card_content">
-            <h3>Côte de bœuf Angus</h3>
-            <p>Et sa purée de panais</p>
-          </div>
-          <div class="card_price">
-            44€
-          </div>
-        </article>
-      </section>
-      <section>
-        <h2>Desserts</h2>
-        <article class="card">
-          <div class="card_content">
-            <h3>Farandole de desserts</h3>
-            <p>Du chef</p>
-          </div>
-          <div class="card_price">
-            18€
-          </div>
-        </article>
-        <article class="card">
-          <div class="card_content">
-            <h3>Crème brulée</h3>
-            <p>Revisitée</p>
-          </div>
-          <div class="card_price">
-            22€
-          </div>
-        </article>
-        <article class="card">
-          <div class="card_content">
-            <h3>Tiramisu</h3>
-            <p>À la noisette</p>
-          </div>
-          <div class="card_price">
-            23€
-          </div>
-        </article>
-      </section>
-      <button>Commander</button>
+      <div class="menu-container_titre">
+        <h1>Le délice des sens</h1><i class="fa-regular fa-heart"></i>
+      </div>
+      <form>
+        <section>
+          <h2>Entrées</h2>
+          <article class="card">
+            <input type="radio" id="entrée1" name="entrée" value="1">
+            <label for="entrée1">
+              <div class="card_content">
+                <h3>Tartare de thon</h3>
+                <p>Assaisonné au yuzu</p>
+              </div>
+              <div class="card_price">
+                25€
+              </div>
+              <div class="card_check">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </label>
+          </article>
+          <article class="card">
+            <input type="radio" id="entrée2" name="entrée" value="2">
+            <label for="entrée2">
+            <div class="card_content">
+              <h3>Bouchée de homard croustillant</h3>
+              <p>Et sa farandole de petits légumes</p>
+            </div>
+            <div class="card_price">
+              35€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+          <article class="card">
+            <input type="radio" id="entrée3" name="entrée" value="3">
+            <label for="entrée3">
+            <div class="card_content">
+              <h3>Velouté de cèpes</h3>
+              <p>Aux truffes</p>
+            </div>
+            <div class="card_price">
+              20€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+        </section>
+        <section>
+          <h2>Plats</h2>
+          <article class="card">
+            <input type="radio" id="plat1" name="plat" value="1">
+            <label for="plat1">
+            <div class="card_content">
+              <h3>Poulet rôti aux herbes de Provence</h3>
+              <p>Et sa crème de truffe</p>
+            </div>
+            <div class="card_price">
+              40€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+          <article class="card">
+            <input type="radio" id="plat2" name="plat" value="2">
+            <label for="plat2">
+            <div class="card_content">
+              <h3>Langouste rôtie</h3>
+              <p>Et ses légumes de saison</p>
+            </div>
+            <div class="card_price">
+              35€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+          <article class="card">
+            <input type="radio" id="plat3" name="plat" value="3">
+            <label for="plat3">
+            <div class="card_content">
+              <h3>Côte de bœuf Angus</h3>
+              <p>Et sa purée de panais</p>
+            </div>
+            <div class="card_price">
+              44€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <article class="card">
+            <input type="radio" id="dessert1" name="dessert" value="1">
+            <label for="dessert1">
+            <div class="card_content">
+              <h3>Farandole de desserts</h3>
+              <p>Du chef</p>
+            </div>
+            <div class="card_price">
+              18€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+          <article class="card">
+            <input type="radio" id="dessert2" name="dessert" value="2">
+            <label for="dessert2">
+            <div class="card_content">
+              <h3>Crème brulée</h3>
+              <p>Revisitée</p>
+            </div>
+            <div class="card_price">
+              22€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+          <article class="card">
+            <input type="radio" id="dessert3" name="dessert" value="3">
+            <label for="dessert3">
+            <div class="card_content">
+              <h3>Tiramisu</h3>
+              <p>À la noisette</p>
+            </div>
+            <div class="card_price">
+              23€
+            </div>
+            <div class="card_check">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            </label>
+          </article>
+        </section>
+        <button type="submit">Commander</button>
+      </form>
     </div>
   </main>
   <footer>
-    <img src="./images/logo/ohmyfood@2x.svg" alt="Oh my food" />
-    <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
-    <p><i class="fa-regular fa-handshake"></i> Devenir partenaire</p>
-    <p>Mentions légales</p>
-    <p>Contact</p>
+    <div>
+      <h1>Oh my food</h1>
+      <div class="footer-container">
+        <div>
+          <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
+          <p><i class="fa-regular fa-handshake"></i> Devenir partenaire</p>
+        </div>
+        <div>
+          <p>Mentions légales</p>
+          <!--Lien pour mail, remplacer l'adresse par une vraie-->
+          <a href="mailto:mail@mail.com">Contact</a>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 

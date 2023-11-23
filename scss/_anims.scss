@@ -91,17 +91,18 @@ Animation pour card_check
 
 .menus {
     .menu-container {
-        .card:hover {
-            .card_content {
-                width: calc(100% - 102px);
-            }
-
-            .card_check {
-                width: 59px;
-                display: flex;
-                animation-name: checkAnimMenu;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
+        .card {
+            input[type="radio"]:checked + label {
+                //.card_content en cas de soucis
+                /* .card_content {
+                    width: calc(100% - 59px);
+                } */
+                .card_check {
+                    display: flex;
+                    animation-name: checkAnimMenu;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }

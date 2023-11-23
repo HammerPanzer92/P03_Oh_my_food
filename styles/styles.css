@@ -27,11 +27,11 @@
   flex-direction: column;
   justify-content: center;
 }
-.index .hero h1,
+.index .hero h2,
 .index .hero p {
   text-align: center;
 }
-.index .hero h1 {
+.index .hero h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28.13px;
@@ -184,10 +184,21 @@
   position: relative;
 }
 .menus .menus-background {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   width: 100%;
   height: 275px;
+}
+.menus .bg-palette {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.menus .bg-note {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.menus .bg-delice {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+.menus .bg-francaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 .menus .menu-container {
   border-radius: 36px 36px 0 0;
@@ -226,11 +237,19 @@
 .menus .menu-container_titre i {
   align-self: center;
 }
+.menus .menu-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .menus .menu-container section {
   margin: 0 17px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.menus .menu-container section input[type=radio] {
+  display: none;
 }
 .menus .menu-container section h2 {
   font-family: "Roboto";
@@ -245,6 +264,12 @@
   width: 349px;
   height: 69px;
   margin: auto;
+  overflow: hidden;
+}
+.menus .menu-container section .card label {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .menus .menu-container section .card_content {
   align-self: center;
@@ -413,11 +438,12 @@ Animation pour card_check
     width: 59px;
   }
 }
-.menus .menu-container .card:hover .card_content {
-  width: calc(100% - 102px);
+.menus .menu-container .card input[type=radio]:checked + label {
+  /* .card_content {
+      width: calc(100% - 59px);
+  } */
 }
-.menus .menu-container .card:hover .card_check {
-  width: 59px;
+.menus .menu-container .card input[type=radio]:checked + label .card_check {
   display: flex;
   animation-name: checkAnimMenu;
   animation-duration: 0.5s;
