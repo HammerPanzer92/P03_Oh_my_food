@@ -454,9 +454,11 @@ Animation pour card_check
 @keyframes appearAnim {
   from {
     opacity: 0;
+    translate: -100%;
   }
   to {
     opacity: 1;
+    translate: 0%;
   }
 }
 .menus section {
@@ -465,14 +467,14 @@ Animation pour card_check
   animation-fill-mode: forwards;
   opacity: 0;
 }
-.menus section:nth-child(2) {
-  animation-delay: 250ms;
+.menus form section:nth-child(1) {
+  animation-delay: 3000ms;
 }
-.menus section:nth-child(3) {
-  animation-delay: 500ms;
+.menus form section:nth-child(2) {
+  animation-delay: 3250ms;
 }
-.menus section:nth-child(4) {
-  animation-delay: 750ms;
+.menus form section:nth-child(3) {
+  animation-delay: 3500ms;
 }
 
 body {

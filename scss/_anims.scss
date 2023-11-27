@@ -109,9 +109,11 @@ Animation pour card_check
 @keyframes appearAnim {
     from {
         opacity: 0;
+        translate: -100%;
     }
     to {
         opacity: 1;
+        translate: 0%;
     }
 }
 
@@ -122,9 +124,9 @@ Animation pour card_check
         animation-fill-mode: forwards;
         opacity: 0;
     }
-    @for $i from 2 to 5 {
-        section:nth-child(#{$i}) {
-            animation-delay: calc(($i * 250ms) - 250ms);
+    @for $i from 1 to 4 {
+        form section:nth-child(#{$i}) {
+            animation-delay: calc(3000ms + (($i * 250ms) - 250ms));
         }
     }
 }
