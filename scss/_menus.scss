@@ -85,29 +85,29 @@
                 height: 69px;
                 margin: auto;
                 overflow: hidden;
-
                 label {
+                    width: calc(100% + 59px);
+                    transition: all 0s, width 0.5s;
                     display: flex;
-                    flex-direction: row;
-                    width: 100%;
                 }
                 &_content {
                     align-self: center;
                     width: 307px;
-                    h3,
-                    p {
+                    display: block;
+                    &_title,
+                    :nth-child(2) {
                         font-family: "Roboto";
                         margin: 0 16px;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                     }
-                    h3 {
+                    &_title {
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 21.09px;
                     }
-                    p {
+                    :nth-child(2) {
                         font-weight: 300;
                         font-size: 15.04px;
                         line-height: 17.63px;
@@ -121,15 +121,15 @@
                     font-size: 15px;
                     line-height: 18px;
                     text-align: center;
+                    display: block;
                     width: 27px;
                 }
                 &_check {
                     background-color: variables.$green;
                     color: variables.$white;
-                    //Coupe le border radius
                     border-radius: 0 15px 15px 0;
-                    display: none;
-                    width: 0px;
+                    width: 59px;
+                    display:flex;
                     .fa-circle-check {
                         margin: auto;
                         font-size: 20px;

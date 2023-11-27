@@ -80,29 +80,27 @@ Animation des favoris
 /*
 Animation pour card_check
 */
-@keyframes checkAnimMenu {
+/* @keyframes checkAnimMenu {
     from {
         width: 0px;
     }
     to {
         width: 59px;
     }
-}
+} */
 
 .menus {
     .menu-container {
         .card {
-            input[type="radio"]:checked + label {
-                //.card_content en cas de soucis
-                /* .card_content {
+            input[type="radio"]:checked {
+                & + label{
                     width: calc(100% - 59px);
-                } */
-                .card_check {
-                    display: flex;
+                }
+                /* & + .card_check:last-child {
                     animation-name: checkAnimMenu;
                     animation-duration: 0.5s;
                     animation-fill-mode: forwards;
-                }
+                } */
             }
         }
     }

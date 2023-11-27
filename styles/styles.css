@@ -267,28 +267,29 @@
   overflow: hidden;
 }
 .menus .menu-container section .card label {
+  width: calc(100% + 59px);
+  transition: all 0s, width 0.5s;
   display: flex;
-  flex-direction: row;
-  width: 100%;
 }
 .menus .menu-container section .card_content {
   align-self: center;
   width: 307px;
+  display: block;
 }
-.menus .menu-container section .card_content h3,
-.menus .menu-container section .card_content p {
+.menus .menu-container section .card_content_title,
+.menus .menu-container section .card_content :nth-child(2) {
   font-family: "Roboto";
   margin: 0 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menus .menu-container section .card_content h3 {
+.menus .menu-container section .card_content_title {
   font-weight: 500;
   font-size: 18px;
   line-height: 21.09px;
 }
-.menus .menu-container section .card_content p {
+.menus .menu-container section .card_content :nth-child(2) {
   font-weight: 300;
   font-size: 15.04px;
   line-height: 17.63px;
@@ -301,14 +302,15 @@
   font-size: 15px;
   line-height: 18px;
   text-align: center;
+  display: block;
   width: 27px;
 }
 .menus .menu-container section .card_check {
   background-color: #99E2D0;
   color: #FFFFFF;
   border-radius: 0 15px 15px 0;
-  display: none;
-  width: 0px;
+  width: 59px;
+  display: flex;
 }
 .menus .menu-container section .card_check .fa-circle-check {
   margin: auto;
@@ -430,24 +432,23 @@ Animation des favoris
 /*
 Animation pour card_check
 */
-@keyframes checkAnimMenu {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 59px;
-  }
-}
-.menus .menu-container .card input[type=radio]:checked + label {
-  /* .card_content {
-      width: calc(100% - 59px);
+/* @keyframes checkAnimMenu {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 59px;
+    }
+} */
+.menus .menu-container .card input[type=radio]:checked {
+  /* & + .card_check:last-child {
+      animation-name: checkAnimMenu;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
   } */
 }
-.menus .menu-container .card input[type=radio]:checked + label .card_check {
-  display: flex;
-  animation-name: checkAnimMenu;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.menus .menu-container .card input[type=radio]:checked + label {
+  width: calc(100% - 59px);
 }
 
 @keyframes appearAnim {
