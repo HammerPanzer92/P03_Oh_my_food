@@ -5,23 +5,22 @@
 */
 @keyframes loading {
     0% {
-        opacity: 1;
         height: 100%;
+        visibility: visible;
     }
     50% {
-        opacity: 0.5;
         height: 100%;
     }
     //précision pour la taille pour éviter que sa taille change durant l'animation et seulement a la fin
     99% {
-        opacity: 0.01;
         height: 100%;
     }
     100% {
-        opacity: 0;
         height: 0%;
+        visibility: hidden;
     }
 }
+
 
 #loader {
     animation-name: loading;
@@ -93,7 +92,7 @@ Animation pour card_check
     .menu-container {
         .card {
             input[type="radio"]:checked {
-                & + label{
+                & + label {
                     width: calc(100% - 59px);
                 }
                 /* & + .card_check:last-child {
