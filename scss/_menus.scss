@@ -106,18 +106,16 @@
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 21.09px;
+                        white-space: pre;
+                        &::after{
+                            content: '\A';
+                        }
                     }
                     :nth-child(2) {
                         font-weight: 300;
                         font-size: 15.04px;
                         line-height: 17.63px;
-                        //Rajout du saut a la ligne auto (fonctionne pas, laisse un écart trop grand avec la ligne d'au dessus)
-                        //Modifié la hauteur de ligne génére une coupure horizontale du texte
-                        /* display: block;
-                        white-space: pre;
-                        &::before{
-                            content: '\A';
-                        } */
+                                               
                     }
                 }
                 &_price {

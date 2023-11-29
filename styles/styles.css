@@ -41,9 +41,6 @@
   font-size: 18px;
   line-height: 21.09px;
 }
-.index .fonctionnement {
-  align-self: center;
-}
 .index .fonctionnement ol {
   counter-reset: item;
   list-style-type: none;
@@ -291,16 +288,15 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21.09px;
+  white-space: pre;
+}
+.menus .menu-container section .card_content_title::after {
+  content: "\a";
 }
 .menus .menu-container section .card_content :nth-child(2) {
   font-weight: 300;
   font-size: 15.04px;
   line-height: 17.63px;
-  /* display: block;
-  white-space: pre;
-  &::before{
-      content: '\A';
-  } */
 }
 .menus .menu-container section .card_price {
   align-self: end;
@@ -450,13 +446,6 @@ Animation pour card_check
         width: 59px;
     }
 } */
-.menus .menu-container .card input[type=radio]:checked {
-  /* & + .card_check:last-child {
-      animation-name: checkAnimMenu;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-  } */
-}
 .menus .menu-container .card input[type=radio]:checked + label {
   width: calc(100% - 59px);
 }
