@@ -25,7 +25,6 @@
     }
 }
 
-
 #loader {
     animation-name: loading;
     animation-delay: 2s;
@@ -68,12 +67,11 @@ Animation des favoris
 .index {
     .card_favorite {
         .fa-regular {
-            transition:
-                all 0s,
-                background-position-y 0.3s;
+            transition: all 0s;
             &:hover {
                 font-weight: 1000;
                 color: transparent;
+                transition: background-position-y 0.5s;
                 background-position-y: top 0px !important;
             }
         }
@@ -124,7 +122,7 @@ Animation pour card_check
     }
     @for $i from 1 to 4 {
         form section:nth-child(#{$i}) {
-            animation-delay: calc(3000ms + (($i * 250ms) - 250ms));
+            animation-delay: calc(($i * 250ms) - 250ms);
         }
     }
 }

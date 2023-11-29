@@ -260,7 +260,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 349px;
+  max-width: 349px;
+  width: 100%;
   height: 69px;
   margin: auto;
   overflow: hidden;
@@ -343,7 +344,7 @@
   }
   .menus main .menu-container section .card {
     height: 69px;
-    width: 634px;
+    max-width: 634px;
   }
   .menus main .menu-container section .card_content {
     width: 591px;
@@ -425,11 +426,12 @@ button:hover {
 Animation des favoris
 */
 .index .card_favorite .fa-regular {
-  transition: all 0s, background-position-y 0.3s;
+  transition: all 0s;
 }
 .index .card_favorite .fa-regular:hover {
   font-weight: 1000;
   color: transparent;
+  transition: background-position-y 0.5s;
   background-position-y: top 0px !important;
 }
 
@@ -465,13 +467,13 @@ Animation pour card_check
   opacity: 0;
 }
 .menus form section:nth-child(1) {
-  animation-delay: 3000ms;
+  animation-delay: 0ms;
 }
 .menus form section:nth-child(2) {
-  animation-delay: 3250ms;
+  animation-delay: 250ms;
 }
 .menus form section:nth-child(3) {
-  animation-delay: 3500ms;
+  animation-delay: 500ms;
 }
 
 body {
