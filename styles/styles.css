@@ -374,16 +374,20 @@
 */
 @keyframes loading {
   0% {
+    opacity: 1;
     height: 100%;
     visibility: visible;
   }
   50% {
+    opacity: 0.5;
     height: 100%;
   }
   99% {
+    opacity: 0.01;
     height: 100%;
   }
   100% {
+    opacity: 0;
     height: 0%;
     visibility: hidden;
   }
