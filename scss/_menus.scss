@@ -86,7 +86,7 @@
                 margin: auto;
                 overflow: hidden;
                 label {
-                    width: calc(100% + 59px);
+                    width: 100%;
                     transition: all 0s, width 0.5s;
                     display: flex;
                 }
@@ -94,12 +94,12 @@
                     align-self: center;
                     width: 307px;
                     display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     &_title,
                     :nth-child(2) {
                         font-family: "Roboto";
                         margin: 0 16px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
                         white-space: nowrap;
                     }
                     &_title {
@@ -120,8 +120,7 @@
                 }
                 &_price {
                     align-self: end;
-                    margin-bottom: 12px;
-                    margin-right: 16px;
+                    margin: 0 16px 12px 16px;
                     font-weight: 700;
                     font-size: 15px;
                     line-height: 18px;
