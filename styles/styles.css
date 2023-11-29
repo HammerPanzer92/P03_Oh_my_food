@@ -138,7 +138,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   background-repeat: no-repeat;
-  background-position-y: top 19px;
+  background-position-y: 19px;
 }
 @media screen and (min-width: 768px) {
   .index .fonctionnement {
@@ -432,7 +432,7 @@ Animation des favoris
   font-weight: 1000;
   color: transparent;
   transition: background-position-y 0.5s;
-  background-position-y: top 0px !important;
+  background-position-y: 0px !important;
 }
 
 /*
