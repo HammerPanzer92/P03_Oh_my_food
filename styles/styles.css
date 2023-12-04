@@ -34,7 +34,6 @@
 }
 .index .hero {
   background-color: #F6F6F6;
-  margin: 0px 0px 50px 0px;
   padding-bottom: 50px;
 }
 .index .hero div {
@@ -56,10 +55,17 @@
   font-size: 18px;
   line-height: 21.09px;
 }
+.index .fonctionnement {
+  margin: 48px 0 0 0;
+}
+.index .fonctionnement h2 {
+  margin: 0;
+}
 .index .fonctionnement ol {
   counter-reset: item;
   list-style-type: none;
   padding: 0px;
+  margin: 0;
 }
 .index .fonctionnement li {
   border-radius: 20px;
@@ -167,6 +173,7 @@
     justify-content: center;
     padding: 50px 180px;
     gap: 25px;
+    margin: 50px 0 0 0;
   }
   .index .fonctionnement ol {
     display: flex;
@@ -504,8 +511,6 @@ a {
 button {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  height: 50px;
-  min-width: 186px;
   text-align: center;
   color: #FFFFFF;
   font-size: 16px;
@@ -514,7 +519,7 @@ button {
   border-width: 0px;
   border-radius: 25px;
   margin: auto;
-  padding: 0 20px;
+  padding: 13px 18.75px;
 }
 
 img {
