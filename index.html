@@ -25,8 +25,10 @@
   </header>
   <main>
     <div class="header-location">
-      <i class="fa-solid fa-location-dot"></i>
-      <p> Paris, Belleville</p>
+      <div id="location_form">
+        <label for="input_location"><i class="fa-solid fa-location-dot"></i></label>
+        <input id="input_location" type="text" value=" Paris, Belleville">
+      </div>
     </div>
     <section class="hero">
       <div>
@@ -41,10 +43,10 @@
       <h2>Fonctionnement</h2>
       <ol>
         <li>
-          <i class="fa-solid fa-mobile-screen-button"></i> Choisissez un restaurant
+          <i class="fa-solid fa-mobile-screen-button"></i><span>Choisissez un restaurant</span>
         </li>
-        <li><i class="fa-solid fa-list-ul"></i> Composez votre menu</li>
-        <li><i class="fa-solid fa-store"></i> Dégustez au restaurant</li>
+        <li><i class="fa-solid fa-list-ul"></i><span>Composez votre menu</span></li>
+        <li><i class="fa-solid fa-store"></i><span>Dégustez au restaurant</span></li>
       </ol>
     </section>
     <section class="restaurants">
@@ -110,7 +112,7 @@
           <a href="menus/delice_des_sens.html">
             <img class="card_img" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="Le délice des sens">
-            </a>
+          </a>
           <div class="card_content">
             <div class="card_text">
               <h2>Le délice des sens</h2>
