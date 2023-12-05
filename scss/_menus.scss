@@ -97,17 +97,16 @@
                     display: block;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    margin: 0 0 0 15px;
                     &_title,
                     :nth-child(2) {
                         font-family: "Roboto";
-                        margin: 0 16px;
-                        white-space: nowrap;
+                        white-space: pre;
                     }
                     &_title {
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 21.09px;
-                        white-space: pre;
                         &::after{
                             content: '\A';
                         }
@@ -121,7 +120,7 @@
                 }
                 &_price {
                     align-self: end;
-                    margin: 0 16px 12px 16px;
+                    margin: 0 15px 12px 0;
                     font-weight: 700;
                     font-size: 15px;
                     line-height: 18px;

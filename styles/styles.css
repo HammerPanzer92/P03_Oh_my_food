@@ -299,18 +299,17 @@
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0 0 0 15px;
 }
 .menus .menu-container section .card_content_title,
 .menus .menu-container section .card_content :nth-child(2) {
   font-family: "Roboto";
-  margin: 0 16px;
-  white-space: nowrap;
+  white-space: pre;
 }
 .menus .menu-container section .card_content_title {
   font-weight: 500;
   font-size: 18px;
   line-height: 21.09px;
-  white-space: pre;
 }
 .menus .menu-container section .card_content_title::after {
   content: "\a";
@@ -322,7 +321,7 @@
 }
 .menus .menu-container section .card_price {
   align-self: end;
-  margin: 0 16px 12px 16px;
+  margin: 0 15px 12px 0;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
