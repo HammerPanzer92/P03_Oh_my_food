@@ -93,7 +93,7 @@ Animation pour card_check
 .menus {
     .menu-container {
         .card {
-            input[type="radio"]:checked {
+            input[type="checkbox"]:checked {
                 & + label {
                     width: calc(100% - 59px);
                 }

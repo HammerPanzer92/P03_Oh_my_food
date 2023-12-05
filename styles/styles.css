@@ -269,7 +269,7 @@
   flex-direction: column;
   gap: 12px;
 }
-.menus .menu-container section input[type=radio] {
+.menus .menu-container section input[type=checkbox] {
   display: none;
 }
 .menus .menu-container section h2 {
@@ -468,7 +468,7 @@ Animation pour card_check
         width: 59px;
     }
 } */
-.menus .menu-container .card input[type=radio]:checked + label {
+.menus .menu-container .card input[type=checkbox]:checked + label {
   width: calc(100% - 59px);
 }
 
