@@ -22,7 +22,7 @@
             align-self: center;
             display: flex;
             justify-content: center;
-            label{
+            label {
                 margin-right: 17px;
             }
             input {
@@ -39,7 +39,7 @@
 
     .hero {
         background-color: variables.$bgcolor;
-        padding-bottom: 50px;
+        padding: 39px 0 57px 0;
         div {
             display: flex;
             flex-direction: column;
@@ -54,6 +54,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 28.13px;
+            margin-top: 0;
         }
         p {
             font-weight: 300;
@@ -63,8 +64,8 @@
     }
 
     .fonctionnement {
-        margin: 48px 0 0 0;
-        h2{
+        margin: 48px 0 68px 0;
+        h2 {
             margin: 0;
         }
         ol {
@@ -84,12 +85,15 @@
             display: flex;
             align-items: center;
             min-height: 72px;
-            span{
+            span {
                 text-align: center;
                 flex-grow: 2;
             }
             .fa-store {
                 color: variables.$button-primary;
+            }
+            &:last-child{
+                margin-bottom: 0px;
             }
             &::before {
                 content: counter(item) "";
@@ -115,6 +119,8 @@
         display: flex;
         flex-direction: column;
         gap: 18px;
+        background-color: variables.$bgcolor;
+        border-bottom: 50px solid variables.$white;
         .card-container {
             display: flex;
             flex-direction: column;
@@ -180,9 +186,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 50px 180px;
+            padding: 0 180px;
             gap: 25px;
-            margin: 50px 0 0 0;
+            margin: 50px 0 50px 0;
             ol {
                 display: flex;
                 flex-direction: row;
@@ -194,8 +200,11 @@
         }
         .restaurants {
             gap: 28px;
-            padding: 0 180px 50px 180px;
-            background-color: variables.$bgcolor;
+            padding: 30px 180px 0 180px;
+            border-bottom-color: variables.$bgcolor;
+            h2{
+                margin: 0;
+            }
             .card-container {
                 gap: 50px;
                 display: grid;
