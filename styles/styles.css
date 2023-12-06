@@ -61,6 +61,7 @@
 }
 .index .fonctionnement h2 {
   margin: 0;
+  font-size: 24px;
 }
 .index .fonctionnement ol {
   counter-reset: item;
@@ -83,6 +84,9 @@
 .index .fonctionnement li span {
   text-align: center;
   flex-grow: 2;
+}
+.index .fonctionnement li .fa-solid {
+  margin-left: 25px;
 }
 .index .fonctionnement li .fa-store {
   color: #9356DC;
@@ -151,14 +155,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5px;
+  padding: 16px 13px 12px;
 }
 .index .restaurants .card .card_content .card_text h2,
 .index .restaurants .card .card_content .card_text p {
-  margin: 5px 0;
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.index .restaurants .card .card_content .card_text h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+}
+.index .restaurants .card .card_content .card_text p {
+  margin-top: 2px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 19.92px;
 }
 .index .restaurants .card .card_content .card_favorite {
   align-self: center;
@@ -188,6 +203,9 @@
   }
   .index .fonctionnement ol li {
     width: 322px;
+  }
+  .index .fonctionnement ol li:last-child {
+    margin-bottom: 25px;
   }
   .index .restaurants {
     gap: 28px;
@@ -239,6 +257,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 4px;
 }
 .menus .menu-container h2::after {
   content: "";
