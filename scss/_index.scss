@@ -52,13 +52,13 @@
         }
         h2 {
             font-weight: 700;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 28.13px;
             margin-top: 0;
         }
         p {
             font-weight: 300;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 21.09px;
         }
     }
@@ -87,11 +87,9 @@
             align-items: center;
             min-height: 72px;
             span {
-                text-align: center;
                 flex-grow: 2;
-            }
-            .fa-solid{
-                margin-left: 25px;
+                font-weight: 500;
+                margin-left: 30px;
             }
             .fa-store {
                 color: variables.$button-primary;
