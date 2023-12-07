@@ -189,17 +189,6 @@
   .index .fonctionnement {
     width: calc(100% - 360px);
   }
-  .index .fonctionnement ol {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
-  .index .fonctionnement ol li {
-    width: 322px;
-  }
-  .index .fonctionnement ol li:last-child {
-    margin-bottom: 25px;
-  }
   .index .restaurants {
     width: calc(100% - 50px);
   }

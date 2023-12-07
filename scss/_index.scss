@@ -195,19 +195,9 @@
     }
 
     @media screen and (min-width: 768px) {
+        //Calcul de largeurs (avec prise en compte des paddings)
         .fonctionnement {
             width: calc(100% - 360px);
-            ol {
-                display: flex;
-                flex-direction: row;
-                gap: 25px;
-                li {
-                    width: 322px;
-                    &:last-child {
-                        margin-bottom: 25px;
-                    }
-                }
-            }
         }
         .restaurants {
             width: calc(100% - 50px);
