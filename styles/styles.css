@@ -193,7 +193,7 @@
     width: calc(100% - 50px);
   }
 }
-@media screen and (min-width: 1045px) {
+@media screen and (min-width: 1048px) {
   .index .fonctionnement {
     display: flex;
     flex-direction: column;
